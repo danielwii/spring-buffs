@@ -58,7 +58,7 @@ dependencies {
     compile 'org.jooq:jooq'
     compile 'org.jooq:jooq-codegen'
 
-    compile 'com.aventrix.jnanoid:jnanoid:1.0.1'
+    compile 'com.aventrix.jnanoid:jnanoid:2.0.0'
 
     // https://github.com/jwtk/jjwt
     compile 'io.jsonwebtoken:jjwt-api:0.10.5'
