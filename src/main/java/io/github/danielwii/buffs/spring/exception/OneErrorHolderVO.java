@@ -8,7 +8,7 @@ import java.util.List;
  * 构造标准的错误响应格式
  */
 @Data
-public class OneErrorHolderVo {
+public class OneErrorHolderVO {
 
     private Error error = new Error();
 

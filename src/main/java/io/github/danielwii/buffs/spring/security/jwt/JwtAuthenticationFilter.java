@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import io.github.danielwii.buffs.spring.security.FilterPaths;
 import io.github.danielwii.buffs.spring.exception.OneError;
 import io.github.danielwii.buffs.spring.exception.OneErrorHolderMapper;
-import io.github.danielwii.buffs.spring.exception.OneErrorHolderVo;
+import io.github.danielwii.buffs.spring.exception.OneErrorHolderVO;
 import io.github.danielwii.buffs.spring.exception.OneException;
 import io.github.danielwii.buffs.spring.security.Authenticatable;
 import lombok.extern.slf4j.Slf4j;
@@ -62,9 +62,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 filterChain.doFilter(request, response);
             } catch (Exception e) {
                 OneException oneException = OneError.recognize(e);
-                OneErrorHolderVo errorHolderVo = OneErrorHolderMapper.INSTANCE.toVO(oneException.getErrorHolder());
+                OneErrorHolderVO errorHolderVO = OneErrorHolderMapper.INSTANCE.toVO(oneException.getErrorHolder());
                 response.setStatus(oneException.getStatus().value());
-                response.getWriter().write(gson.toJson(errorHolderVo));
+                response.getWriter().write(gson.toJson(errorHolderVO));
             }
         } else {
             filterChain.doFilter(request, response);

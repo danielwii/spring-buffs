@@ -20,6 +20,6 @@ public interface OneErrorHolderMapper {
         @Mapping(source = "error", target = "error.type"),
         @Mapping(source = "errors", target = "error.errors"),
     })
-    OneErrorHolderVo toVO(OneErrorHolder errorHolder);
+    OneErrorHolderVO toVO(OneErrorHolder errorHolder);
 
 }

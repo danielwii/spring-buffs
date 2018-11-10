@@ -11,14 +11,14 @@ import lombok.extern.slf4j.Slf4j;
 public class OneExceptionHandlerAdvice {
 
     @ExceptionHandler(OneException.class)
-    public ResponseEntity<OneErrorHolderVo> handleException(OneException exception) {
+    public ResponseEntity<OneErrorHolderVO> handleException(OneException exception) {
         log.warn(exception.getMessage());
-        OneErrorHolderVo errorHolderVo = OneErrorHolderMapper.INSTANCE.toVO(exception.getErrorHolder());
-        return ResponseEntity.status(exception.getStatus()).body(errorHolderVo);
+        OneErrorHolderVO errorHolderVO = OneErrorHolderMapper.INSTANCE.toVO(exception.getErrorHolder());
+        return ResponseEntity.status(exception.getStatus()).body(errorHolderVO);
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<OneErrorHolderVo> handleException(Exception exception) {
+    public ResponseEntity<OneErrorHolderVO> handleException(Exception exception) {
         log.error(exception.getMessage(), exception);
         return handleException(OneError.recognize(exception));
     }

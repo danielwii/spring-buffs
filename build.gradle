@@ -17,6 +17,9 @@ plugins {
 //    id "net.ltgt.errorprone" version "0.0.14"
 }
 
+group = 'io.github.danielwii'
+
+apply plugin: 'maven'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
@@ -41,7 +44,6 @@ lombok {
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
-
 
 dependencies {
     compile('javax.xml.bind:jaxb-api:2.3.1')
@@ -84,3 +86,7 @@ dependencies {
 }
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+jar {
+    enabled = true
+}
