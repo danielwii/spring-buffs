@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.beans.PropertyEditorSupport;
 
-class CaseInsensitivePropertyEditor<T extends Enum<T>> extends PropertyEditorSupport {
+public class CaseInsensitivePropertyEditor<T extends Enum<T>> extends PropertyEditorSupport {
 
     private final Class<T> typeParameterClass;
 

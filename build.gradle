@@ -17,8 +17,6 @@ plugins {
 //    id "net.ltgt.errorprone" version "0.0.14"
 }
 
-group = 'io.github.danielwii'
-
 apply plugin: 'maven'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
