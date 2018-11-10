@@ -8,7 +8,7 @@ public class CaseInsensitivePropertyEditor<T extends Enum<T>> extends PropertyEd
 
     private final Class<T> typeParameterClass;
 
-    CaseInsensitivePropertyEditor(Class<T> typeParameterClass) {
+    public CaseInsensitivePropertyEditor(Class<T> typeParameterClass) {
         super();
         this.typeParameterClass = typeParameterClass;
     }
