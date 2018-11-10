@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.jooq;
+package io.github.danielwii.buffs.spring.jooq;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;

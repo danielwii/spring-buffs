@@ -1,11 +1,11 @@
-package io.github.danielwii.wyf.exception;
+package io.github.danielwii.buffs.spring.exception;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
 
-import io.github.danielwii.wyf.mapper.ThrowableMapper;
+import io.github.danielwii.buffs.spring.mapper.ThrowableMapper;
 
 @Mapper(uses = ThrowableMapper.class)
 public interface OneErrorHolderMapper {

@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.jooq;
+package io.github.danielwii.buffs.spring.jooq;
 
 import org.jooq.Record;
 import org.jooq.impl.TableImpl;

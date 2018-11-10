@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.exception;
+package io.github.danielwii.buffs.spring.exception;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;

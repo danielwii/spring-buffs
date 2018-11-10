@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.serializer;
+package io.github.danielwii.buffs.spring.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

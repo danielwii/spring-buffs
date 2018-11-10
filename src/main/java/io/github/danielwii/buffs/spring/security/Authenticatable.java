@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.security;
+package io.github.danielwii.buffs.spring.security;
 
 import org.springframework.security.core.Authentication;
 

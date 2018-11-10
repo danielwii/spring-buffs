@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.infrastructure;
+package io.github.danielwii.buffs.spring.infrastructure;
 
 import java.sql.Timestamp;
 

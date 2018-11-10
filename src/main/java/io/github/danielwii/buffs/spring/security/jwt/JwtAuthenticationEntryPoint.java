@@ -1,11 +1,12 @@
-package io.github.danielwii.wyf.security.jwt;
+package io.github.danielwii.buffs.spring.security.jwt;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.github.danielwii.wyf.exception.OneError;
-import io.github.danielwii.wyf.exception.OneErrorHolderMapper;
-import io.github.danielwii.wyf.exception.OneErrorHolderVo;
-import io.github.danielwii.wyf.exception.OneException;
+
+import io.github.danielwii.buffs.spring.exception.OneError;
+import io.github.danielwii.buffs.spring.exception.OneErrorHolderMapper;
+import io.github.danielwii.buffs.spring.exception.OneErrorHolderVo;
+import io.github.danielwii.buffs.spring.exception.OneException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.BadCredentialsException;

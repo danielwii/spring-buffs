@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.security;
+package io.github.danielwii.buffs.spring.security;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

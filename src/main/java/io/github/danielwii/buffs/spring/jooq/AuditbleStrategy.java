@@ -1,6 +1,6 @@
-package io.github.danielwii.wyf.jooq;
+package io.github.danielwii.buffs.spring.jooq;
 
-import io.github.danielwii.wyf.infrastructure.Auditable;
+import io.github.danielwii.buffs.spring.infrastructure.Auditable;
 import org.jooq.codegen.DefaultGeneratorStrategy;
 import org.jooq.meta.Definition;
 

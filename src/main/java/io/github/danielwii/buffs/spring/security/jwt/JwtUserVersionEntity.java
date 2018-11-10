@@ -1,6 +1,6 @@
-package io.github.danielwii.wyf.security.jwt;
+package io.github.danielwii.buffs.spring.security.jwt;
 
-import io.github.danielwii.wyf.infrastructure.AbstractBaseVersionEntity;
+import io.github.danielwii.buffs.spring.infrastructure.AbstractBaseVersionEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

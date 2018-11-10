@@ -1,6 +1,6 @@
-package io.github.danielwii.wyf.infrastructure;
+package io.github.danielwii.buffs.spring.infrastructure;
 
-import io.github.danielwii.wyf.helper.DateHelper;
+import io.github.danielwii.buffs.spring.helper.DateHelper;
 import lombok.Data;
 
 import javax.persistence.*;

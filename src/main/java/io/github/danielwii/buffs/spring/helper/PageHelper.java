@@ -1,9 +1,9 @@
-package io.github.danielwii.wyf.helper;
+package io.github.danielwii.buffs.spring.helper;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
-import io.github.danielwii.wyf.infrastructure.PageableDTO;
+import io.github.danielwii.buffs.spring.infrastructure.PageableDTO;
 
 public enum PageHelper {
     ;

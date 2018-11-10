@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.infrastructure;
+package io.github.danielwii.buffs.spring.infrastructure;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.helper;
+package io.github.danielwii.buffs.spring.helper;
 
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;

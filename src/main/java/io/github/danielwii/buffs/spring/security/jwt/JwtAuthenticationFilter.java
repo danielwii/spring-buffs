@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.security.jwt;
+package io.github.danielwii.buffs.spring.security.jwt;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -17,12 +17,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import io.github.danielwii.wyf.exception.OneError;
-import io.github.danielwii.wyf.exception.OneErrorHolderMapper;
-import io.github.danielwii.wyf.exception.OneErrorHolderVo;
-import io.github.danielwii.wyf.exception.OneException;
-import io.github.danielwii.wyf.security.Authenticatable;
-import io.github.danielwii.wyf.security.FilterPaths;
+import io.github.danielwii.buffs.spring.security.FilterPaths;
+import io.github.danielwii.buffs.spring.exception.OneError;
+import io.github.danielwii.buffs.spring.exception.OneErrorHolderMapper;
+import io.github.danielwii.buffs.spring.exception.OneErrorHolderVo;
+import io.github.danielwii.buffs.spring.exception.OneException;
+import io.github.danielwii.buffs.spring.security.Authenticatable;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

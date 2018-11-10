@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.security.jwt;
+package io.github.danielwii.buffs.spring.security.jwt;
 
 import lombok.Builder;
 import lombok.ToString;

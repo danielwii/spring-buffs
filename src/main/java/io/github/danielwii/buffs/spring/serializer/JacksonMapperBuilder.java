@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.serializer;
+package io.github.danielwii.buffs.spring.serializer;
 
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;

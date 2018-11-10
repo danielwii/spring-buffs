@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.exception;
+package io.github.danielwii.buffs.spring.exception;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.jooq.listener;
+package io.github.danielwii.buffs.spring.jooq.listener;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jooq.DSLContext;

@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.mapper;
+package io.github.danielwii.buffs.spring.mapper;
 
 import java.sql.Timestamp;
 import java.time.OffsetDateTime;

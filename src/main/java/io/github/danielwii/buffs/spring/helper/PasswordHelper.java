@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.helper;
+package io.github.danielwii.buffs.spring.helper;
 
 import com.google.common.hash.Hashing;
 

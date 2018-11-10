@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.jooq.listener;
+package io.github.danielwii.buffs.spring.jooq.listener;
 
 import org.jooq.ExecuteContext;
 import org.jooq.impl.DefaultExecuteListener;

@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.security.jwt;
+package io.github.danielwii.buffs.spring.security.jwt;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
@@ -22,9 +22,9 @@ import java.util.function.Supplier;
 
 import javax.servlet.http.HttpServletRequest;
 
-import io.github.danielwii.wyf.exception.OneError;
-import io.github.danielwii.wyf.exception.OneException;
-import io.github.danielwii.wyf.helper.DateHelper;
+import io.github.danielwii.buffs.spring.helper.DateHelper;
+import io.github.danielwii.buffs.spring.exception.OneError;
+import io.github.danielwii.buffs.spring.exception.OneException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwsHeader;
 import io.jsonwebtoken.Jwts;

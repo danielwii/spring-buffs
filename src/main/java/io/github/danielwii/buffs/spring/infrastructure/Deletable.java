@@ -1,4 +1,4 @@
-package io.github.danielwii.wyf.infrastructure;
+package io.github.danielwii.buffs.spring.infrastructure;
 
 public interface Deletable {
 
