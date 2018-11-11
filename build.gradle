@@ -12,6 +12,7 @@ plugins {
     id 'org.springframework.boot' version '2.1.0.RELEASE'
 
     id 'io.franzbecker.gradle-lombok' version '1.14'
+    id "net.ltgt.apt" version "0.19"
 
 //    id "org.sonarqube" version "2.5"
 //    id "net.ltgt.errorprone" version "0.0.14"
@@ -38,6 +39,7 @@ lombok {
     // 1.16.20 will cause
     // java.lang.ClassNotFoundException: com.sun.tools.javac.code.TypeTags
     version = "1.18.4"
+    sha256 = ""
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -78,12 +80,15 @@ dependencies {
     compile group: 'org.jetbrains', name: 'annotations', version: '16.0.3'
 
     annotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
     // If you are using mapstruct in test code
     testAnnotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
 }
 
 [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+compileJava.dependsOn(processResources)
 
 jar {
     enabled = true

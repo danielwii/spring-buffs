@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mobile.device.Device;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
@@ -22,9 +21,9 @@ import java.util.function.Supplier;
 
 import javax.servlet.http.HttpServletRequest;
 
-import io.github.danielwii.buffs.spring.helper.DateHelper;
 import io.github.danielwii.buffs.spring.exception.OneError;
 import io.github.danielwii.buffs.spring.exception.OneException;
+import io.github.danielwii.buffs.spring.helper.DateHelper;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwsHeader;
 import io.jsonwebtoken.Jwts;
@@ -34,7 +33,6 @@ import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@Component
 public class JwtAuthenticationService {
 
     private static final String                   AUDIENCE_UNKNOWN = "unknown";

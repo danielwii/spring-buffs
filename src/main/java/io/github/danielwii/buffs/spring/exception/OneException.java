@@ -46,7 +46,7 @@ public class OneException extends RuntimeException {
         return this;
     }
 
-    public OneException errors(List errors) {
+    public OneException errors(List<?> errors) {
         errorHolder.setErrors(errors);
         return this;
     }

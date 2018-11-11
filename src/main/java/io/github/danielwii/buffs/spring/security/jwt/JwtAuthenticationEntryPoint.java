@@ -3,23 +3,23 @@ package io.github.danielwii.buffs.spring.security.jwt;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import org.springframework.http.MediaType;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import io.github.danielwii.buffs.spring.exception.OneError;
 import io.github.danielwii.buffs.spring.exception.OneErrorHolderMapper;
 import io.github.danielwii.buffs.spring.exception.OneErrorHolderVO;
 import io.github.danielwii.buffs.spring.exception.OneException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.MediaType;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.web.AuthenticationEntryPoint;
-import org.springframework.stereotype.Component;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @Slf4j
-@Component
 public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     private Gson gson = new GsonBuilder().serializeNulls().create();

@@ -5,7 +5,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.ParameterizedType;
@@ -18,7 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Aspect
-@Component
 public class RecordExistsAspect {
 
     @Autowired(required = false)
