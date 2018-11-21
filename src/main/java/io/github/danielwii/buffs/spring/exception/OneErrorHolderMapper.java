@@ -5,20 +5,24 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
 
-import io.github.danielwii.buffs.spring.mapper.ThrowableMapper;
+import io.github.danielwii.buffs.spring.mapper.IOneErrorFieldMapper;
+import io.github.danielwii.buffs.spring.mapper.ThrowableFieldMapper;
 
-@Mapper(uses = ThrowableMapper.class)
+@Mapper(uses = {
+        ThrowableFieldMapper.class,
+        IOneErrorFieldMapper.class,
+})
 public interface OneErrorHolderMapper {
 
     OneErrorHolderMapper INSTANCE = Mappers.getMapper(OneErrorHolderMapper.class);
 
     @Mappings({
-        @Mapping(source = "message", target = "error.message"),
-        @Mapping(source = "exception", target = "error.exception"),
-        @Mapping(source = "additional", target = "error.additional"),
-        @Mapping(source = "error.code", target = "error.code"),
-        @Mapping(source = "error", target = "error.type"),
-        @Mapping(source = "errors", target = "error.errors"),
+            @Mapping(source = "message", target = "error.message"),
+            @Mapping(source = "exception", target = "error.exception"),
+            @Mapping(source = "additional", target = "error.additional"),
+            @Mapping(source = "error.code", target = "error.code"),
+            @Mapping(source = "error", target = "error.type"),
+            @Mapping(source = "errors", target = "error.errors"),
     })
     OneErrorHolderVO toVO(OneErrorHolder errorHolder);
 

@@ -6,6 +6,8 @@ import java.util.function.Function;
 
 public interface IOneError {
 
+    String getCode();
+
     String getMessageTemplate();
 
     Function<OneErrorHolder, ? extends OneException> getErrorFunction();
