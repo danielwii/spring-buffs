@@ -126,7 +126,7 @@ public enum OneError {
 
         // 暂未识别的异常
         OneException oneException = INTERNAL_EXCEPTION.build().message(exception.getMessage()).throwable(exception);
-        log.warn(String.format("Unrecognized Error: [%s]", oneException));
+        log.warn("Unrecognized Error", oneException);
         return oneException;
     }
 
