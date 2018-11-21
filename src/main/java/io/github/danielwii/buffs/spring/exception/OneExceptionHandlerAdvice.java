@@ -20,7 +20,7 @@ public class OneExceptionHandlerAdvice {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<OneErrorHolderVO> handleException(Exception exception) {
         log.error(exception.getMessage(), exception);
-        return handleException(OneError.recognize(exception));
+        return handleException(OneErrors.recognize(exception));
     }
 
 }
