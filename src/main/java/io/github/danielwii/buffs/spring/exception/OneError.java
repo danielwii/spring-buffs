@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @ToString
 @Getter
-public enum OneError {
+public enum OneError implements IOneError {
 
     // @formatter:off
 
@@ -96,46 +96,6 @@ public enum OneError {
         this.code = code;
         this.messageTemplate = messageTemplate;
         this.errorFunction = errorFunction;
-    }
-
-    public static OneException recognize(Exception exception) {
-        if (exception instanceof OneException) {
-            return (OneException) exception;
-        }
-
-        // 422
-        if (exception instanceof MethodArgumentNotValidException) {
-            List<ObjectError> allErrors = ((MethodArgumentNotValidException) exception).getBindingResult().getAllErrors();
-            return UNPROCESSABLE_ENTITY.build().errors(allErrors).throwable(exception);
-        }
-
-        // 422
-        if (exception instanceof MissingServletRequestParameterException) {
-            return UNPROCESSABLE_ENTITY.build().throwable(exception);
-        }
-
-        // 400
-        if (exception instanceof HttpMessageNotReadableException) {
-            return BAD_REQUEST.build().throwable(exception);
-        }
-
-        // 415
-        if (exception instanceof HttpMediaTypeNotSupportedException) {
-            return UNSUPPORTED_MEDIA_TYPE.build().throwable(exception);
-        }
-
-        // 暂未识别的异常
-        OneException oneException = INTERNAL_EXCEPTION.build().message(exception.getMessage()).throwable(exception);
-        log.warn("Unrecognized Error", oneException);
-        return oneException;
-    }
-
-    public OneException build(Object... params) {
-        OneErrorHolder errorHolder = OneErrorHolder.builder()
-            .error(this)
-            .message(params != null ? String.format(messageTemplate, params) : messageTemplate)
-            .build();
-        return errorFunction != null ? errorFunction.apply(errorHolder) : new OneExceptionError(errorHolder, status);
     }
 
     @Contract(value = "null -> false", pure = true)
