@@ -46,7 +46,7 @@ public enum OneErrors {
         return oneException;
     }
 
-    public static OneException build(OneError error, Object... params) {
+    public static OneException build(IOneError error, Object... params) {
         OneErrorHolder errorHolder = OneErrorHolder.builder()
                 .error(error)
                 .message(params != null ? String.format(error.getMessageTemplate(), params) : error.getMessageTemplate())

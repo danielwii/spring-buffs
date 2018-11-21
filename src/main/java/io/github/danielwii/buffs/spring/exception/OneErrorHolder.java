@@ -11,7 +11,7 @@ public class OneErrorHolder {
     /**
      * 业务异常
      */
-    private OneError  error;
+    private IOneError error;
     /**
      * 基本错误信息
      */
