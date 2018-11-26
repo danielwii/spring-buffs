@@ -52,6 +52,10 @@ public enum OneErrors {
         return oneException;
     }
 
+    public static OneException build(IOneError error) {
+        return build(error, error.getMessageTemplate());
+    }
+
     public static OneException build(IOneError error, String message) {
         return build(error, message, null);
     }
