@@ -1,4 +1,4 @@
-package io.github.danielwii.buffs.spring.infrastructure;
+package io.github.danielwii.buffs.spring.shared;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Aspect;

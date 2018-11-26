@@ -1,8 +1,8 @@
 package io.github.danielwii.buffs.spring.exception;
 
-import lombok.Data;
-
 import java.util.List;
+
+import lombok.Data;
 
 /**
  * 构造标准的错误响应格式
@@ -14,12 +14,12 @@ public class OneErrorHolderVO {
 
     @Data
     static class Error {
-        private String code;
-        private String type;
-        private String message;
-        private String exception;
-        private Object additional;
-        private String traceId;
+        private String       code;
+        private String       type;
+        private String       message;
+        private String       cause;
+        private Object       additional;
+        private String       traceId;
         private List<Object> details;
         private List<Object> errors;
     }

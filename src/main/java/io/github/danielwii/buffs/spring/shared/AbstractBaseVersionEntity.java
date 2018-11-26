@@ -1,4 +1,4 @@
-package io.github.danielwii.buffs.spring.infrastructure;
+package io.github.danielwii.buffs.spring.shared;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -18,7 +18,7 @@ public interface OneErrorHolderMapper {
 
     @Mappings({
             @Mapping(source = "message", target = "error.message"),
-            @Mapping(source = "exception", target = "error.exception"),
+            @Mapping(source = "cause", target = "error.cause"),
             @Mapping(source = "additional", target = "error.additional"),
             @Mapping(source = "error.code", target = "error.code"),
             @Mapping(source = "error", target = "error.type"),

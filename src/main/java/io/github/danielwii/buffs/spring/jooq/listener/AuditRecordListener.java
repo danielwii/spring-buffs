@@ -1,7 +1,7 @@
 package io.github.danielwii.buffs.spring.jooq.listener;
 
 import io.github.danielwii.buffs.spring.helper.DateHelper;
-import io.github.danielwii.buffs.spring.infrastructure.Auditable;
+import io.github.danielwii.buffs.spring.shared.Auditable;
 
 import org.jooq.RecordContext;
 import org.jooq.impl.DefaultRecordListener;

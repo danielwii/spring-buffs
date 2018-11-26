@@ -8,6 +8,7 @@ import lombok.Data;
 @Builder
 @Data
 public class OneErrorHolder {
+
     /**
      * 业务异常
      */
@@ -19,7 +20,7 @@ public class OneErrorHolder {
     /**
      * 原始错误信息，非业务异常定义
      */
-    private Throwable exception;
+    private Throwable cause;
     /**
      * 一个预留的错误信息占位，用于自定义输出
      */

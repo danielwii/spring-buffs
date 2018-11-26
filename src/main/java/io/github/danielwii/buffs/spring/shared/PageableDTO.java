@@ -1,9 +1,10 @@
-package io.github.danielwii.buffs.spring.infrastructure;
+package io.github.danielwii.buffs.spring.shared;
 
-import lombok.Data;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+
+import lombok.Data;
 
 @Data
 public class PageableDTO {
