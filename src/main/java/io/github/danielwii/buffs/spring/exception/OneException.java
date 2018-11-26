@@ -26,8 +26,14 @@ public class OneException extends RuntimeException {
         this.status = status;
     }
 
-    public void setErrors(List<?> errors) {
+    public OneException errors(List<?> errors) {
         errorHolder.setErrors(errors);
+        return this;
+    }
+
+    public OneException additional(Object additional) {
+        errorHolder.setAdditional(additional);
+        return this;
     }
 
     @Override
