@@ -2,13 +2,7 @@ package io.github.danielwii.buffs.spring.exception;
 
 import org.jetbrains.annotations.Contract;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.validation.ObjectError;
-import org.springframework.web.HttpMediaTypeNotSupportedException;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.MissingServletRequestParameterException;
 
-import java.util.List;
 import java.util.function.Function;
 
 import javax.validation.constraints.NotNull;
@@ -96,6 +90,10 @@ public enum OneError implements IOneError {
         this.code = code;
         this.messageTemplate = messageTemplate;
         this.errorFunction = errorFunction;
+    }
+
+    public String message(Object... params) {
+        return String.format(messageTemplate, params);
     }
 
     @Contract(value = "null -> false", pure = true)
