@@ -51,12 +51,12 @@ public class OneExceptionAssembler {
         this.cause = cause;
     }
 
-    private OneExceptionAssembler params(Object... params) {
+    public OneExceptionAssembler params(Object... params) {
         this.params = params;
         return this;
     }
 
-    private OneExceptionAssembler additional(Object additional) {
+    public OneExceptionAssembler additional(Object additional) {
         this.additional = additional;
         return this;
     }
