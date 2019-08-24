@@ -2,6 +2,7 @@ buildscript {
     repositories {
         maven { url 'http://repo.spring.io/plugins-release' }
         maven { url "https://plugins.gradle.org/m2/" }
+        jcenter()
     }
     dependencies {
         classpath "io.franzbecker:gradle-lombok:3.1.0"
@@ -10,6 +11,12 @@ buildscript {
         classpath "io.spring.gradle:dependency-management-plugin:1.0.8.RELEASE"
         classpath "net.ltgt.gradle:gradle-apt-plugin:0.21"
     }
+}
+
+repositories {
+    maven { url 'http://repo.spring.io/plugins-release' }
+    maven { url "https://plugins.gradle.org/m2/" }
+    jcenter()
 }
 
 apply plugin: 'java'
